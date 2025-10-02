@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us-Heavenly Bakes</title>
+     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+   
+         <nav>
+            <aside id="nav_one">
+                <h1>Heavenly Bakes</h1>
+            </aside>
+            <aside id="nav_two">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+            </aside>
+            <aside id="nav_three">
+                <i class="ri-shopping-cart-2-line" id="cart"></i>
+                <div id="cart_quantity">0</div>
+                <p id="cart_price">  ₹ 0.00 </p>
+            </aside>
+        </nav>
+        
+        <div id="contact_container">
+               <aside id="contact_data">
+               <h1>Contact</h1>
+                <br><br>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7da81968-afff-4560-bc8d-5d6d1a015554"> 
+                    <!-- web3forms from chrome -->
+                <input type="text" placeholder="Name" name="name">
+                <br><br>
+                <input type="email" placeholder="Email" name="email">
+                <br><br>
+                 <textarea name="message" id="contact_message" placeholder="message" rows="5" cols="54" name="message"></textarea>
+                 <br>
+                 <button type="submit">Send</button>
+               </aside>
+               </form>
+
+               <aside id="contact_address">
+                <h1>Get in Touch</h1>
+                 <br>
+                <p id="contact_phone">📞 +91 9784738343</p>
+                <p id="contact_email">📧 heavenlybakes@gmail.com</p>
+                <p id="address"><i class="fa-solid fa-location-dot"></i>143,Chaitanyapuri,Hyderabad</p>
+                <img src="./assets/favicon.png" alt="logo" height="200" width="200">
+            </aside>
+        </div>
+   
+</body>
+</html>

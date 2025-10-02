@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu-Heavenly Bakes</title>
+     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <nav>
+            <aside id="nav_one">
+                <h1>Heavenly Bakes</h1>
+            </aside>
+            <aside id="nav_two">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+            </aside>
+            <aside id="nav_three">
+                <i class="ri-shopping-cart-2-line" id="cart"></i>
+                <div id="cart_quantity">0</div>
+                <p id="cart_price"> ₹ 0.00 </p>
+            </aside>
+   </nav>
+
+      <aside id="sidebar">
+        <div id="sidebar_one">
+            <h1>Cart</h1>
+            <p id="close_sidebar">X</p>
+          </div> 
+       <div id="sidebar_items"></div>
+       
+      <button id="buyBtn">Buy Now</button>
+      </aside>
+      
+   <section id="menu_filter">
+      <h1>Our Menu</h1>
+      <div id="menu_btns">
+        <button class="active" onclick="filterItems('all')">All</button>
+        <button onclick="filterItems('bread')">Breads</button>
+        <button onclick="filterItems('cake')">Cakes</button>
+        <button onclick="filterItems('croissant')">Croissant</button>
+        <button onclick="filterItems('fruitTart')">Fruit Tart</button>
+      </div>
+   </section>
+   <section id="menu_items">
+         <div class="card bread">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/bread1.jpg" alt="bread1" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Brown Bread</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 50/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button>Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card bread">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/bread2.webp" alt="bread2" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Milk Bread Loaf</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 55/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button >Add To Cart</button>
+                   
+                </aside>
+              </article>
+         </div>
+         <div class="card bread">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/bread3.jpg" alt="bread3" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Spicy Veg Roll</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 50/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button >Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card bread">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/bread4.png" alt="bread4" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Golden Egg Roll</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 60/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button >Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card cake">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/cake1.jpg" alt="cake1" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Chocolate Truffle </h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 70/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                 <button >Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card cake">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/cake2.webp" alt="cake1" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Red Velvet Cake</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 40/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside  class="addToCart">
+                    <button>Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card cake">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/cake3.jpg" alt="cake3" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Pineapple Cake</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 55/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button >Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card cake">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/cake4.jpeg" alt="cake4" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Vanilla Sponge </h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 50/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button >Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card croissant">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/crossiant1.webp" alt="Croissant1" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Stuffed Croissant</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 65/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button >Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card croissant">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/crossiant2.jpg" alt="croissant2" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Fruit Danish Pastry</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 70/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside  class="addToCart">
+                    <button>Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card croissant">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/crossiant3.jpg" alt="croissant3" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Chocolate Almond </h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 90/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button >Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card fruitTart">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/fruitTart1.jpg" alt="fruittart1" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Mini Fruit Tart</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 50/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button >Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+         <div class="card fruitTart">
+              <article class="cart_one">
+                  <aside class="cart_img">
+                  <img src="./assets/fruitTart2.png" alt="fruitTart2" >
+                  </aside>
+                  <aside class="cart_info">
+                    <h2>Strawberry Tart</h2>
+                    <p><i class="ri-money-rupee-circle-fill" id="rupee"></i> 70/-</p>
+                  </aside>
+              </article>
+              <article class="cart_two">
+                <aside class="quantity_cart">
+                    <p class="minus">-</p>
+                    <p class="quantity">0</p>
+                    <p class="plus">+</p>
+                </aside>
+                <aside class="addToCart">
+                    <button >Add To Cart</button>
+                </aside>
+              </article>
+         </div>
+  </section>
+  <script src="./Menu.js"></script>
+</body>
+</html>
