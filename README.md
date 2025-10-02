@@ -17,8 +17,11 @@ Location:Clearly provides the physical address and contact information.
 This project was built using standard web technologies:
 
 HTML5:For the basic structure and content of the site, including the structure of the feedback form.
+
 CSS3:For all styling, layout, and responsive design features.
+
 JavaScript:(If used for form validation or mobile menu toggles, include this line, otherwise, you can remove it).
+
 Static Assets:Uses local image files (.jpg, .png, .webp) stored in the assets folder.
 
  🚀 How to View Locally
